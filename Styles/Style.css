@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+
+    font-family: "Mulish", sans-serif;
+}
+header , main {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+.mobile-menu {
+    display: none;
+}
+.desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2.25rem;
+    font-weight:800;
+    color: #131318;
+}
+.logo-txt {
+    color: #FF5400;
+}
+
+.menus a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #424247;
+    padding: 22px;
+}
+
+.menus a:first-child {
+    color: #FF5400;
+    font-weight: 700;
+}
+
+
+/* Mobile Styles */
+
+@media only screen and (max-width:576px) {
+    header , main {
+        padding: 0px;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu {
+        padding: 20px 0px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo h1 {
+        font-size: 1.35rem;
+        font-weight: 800;
+        padding-left: 10px;
+    }
+    .hamburger img {
+        padding-right: 20px;
+    }
+}
