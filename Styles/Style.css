@@ -1,23 +1,27 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
+* {
 
     font-family: "Mulish", sans-serif;
 }
-header , main {
+
+header,
+main {
     padding-left: 135px;
     padding-right: 135px;
 }
+
 .mobile-menu {
     display: none;
 }
+
 .desktop-menu {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
     align-items: center;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -25,14 +29,15 @@ header , main {
 
 .logo h1 {
     font-size: 2.25rem;
-    font-weight:800;
+    font-weight: 800;
     color: #131318;
 }
+
 .logo-txt {
     color: #FF5400;
 }
 
-.menus a{
+.menus a {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 400;
@@ -45,29 +50,109 @@ header , main {
     font-weight: 700;
 }
 
+/* hero */
+.hero {
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Hero.png");
+    width: 100%;
+    border-radius: 16px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    padding-top: 100px;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+.hero-text p {
+    color: #FFFFFF;
+    font-weight: 400;
+    width: 650px;
+    margin: 24px auto;
+}
+
+
+.box {
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 100px;
+
+}
+
+.btn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    background-color: #FF5400;
+    font-weight: 700;
+}
 
 /* Mobile Styles */
 
 @media only screen and (max-width:576px) {
-    header , main {
+
+    header,
+    main {
         padding: 0px;
     }
-    .desktop-menu{
+
+    .desktop-menu {
         display: none;
     }
+
     .mobile-menu {
         padding: 20px 0px 20px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .logo h1 {
         font-size: 1.35rem;
         font-weight: 800;
         padding-left: 10px;
     }
+
     .hamburger img {
         padding-right: 20px;
     }
+
+    .hero {
+        width: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        width: auto;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
