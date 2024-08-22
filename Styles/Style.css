@@ -122,12 +122,14 @@ header {
     gap: 50px;
     justify-content: space-between;
 }
+
 .popular-tour-text {
     width: 500px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
+
 .popular-tour-text h1 {
     color: #131318;
     font-size: 2.5rem;
@@ -139,6 +141,51 @@ header {
 li {
     color: rgba(19, 19, 24, 0.70);
     font-weight: 400;
+}
+
+.your-destination-container {
+    margin-top: 80px;
+}
+
+.destination-text {
+    text-align: center;
+}
+.destination-text h1 {
+color: #131318;
+font-size: 2.5rem;
+font-weight: 800;
+}
+.desitination-img-1,
+.desitination-img-2,
+.desitination-img-3,
+.desitination-img-4,
+.desitination-img-5,
+.desitination-img-6,
+.desitination-img-7 {
+    position: relative;
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.destinatiton-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.destination-grp-1,
+.destination-grp-2,
+.destination-grp-3 {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
 /* Mobile Styles */
@@ -192,24 +239,61 @@ li {
         display: flex;
         flex-direction: column;
     }
+
     /* Main */
     .popular-tour-container {
         flex-direction: column;
         margin-top: 40px;
     }
+
     .popular-tour-text {
         width: auto;
     }
+
     .popular-tour-text h1 {
         font-size: 1.25rem;
     }
-    
+
     .popular-tour-text p,
     li {
         font-size: .90rem;
     }
+
     .popular-tour-img img {
         width: 100%;
+    }
+
+    .your-destination-container {
+        margin-top: 80px;
+    }
+
+    .destination-grp-1,
+    .destination-grp-2,
+    .destination-grp-3 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    
+.destinatiton-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.desitination-img-1,
+.desitination-img-2,
+.desitination-img-3,
+.desitination-img-4,
+.desitination-img-5,
+.desitination-img-6,
+.desitination-img-7, img {
+    width: 100%;
+}
+
+.destination-text h1 {
+    font-size: 1.25rem;
     }
 
 }
