@@ -150,11 +150,13 @@ li {
 .destination-text {
     text-align: center;
 }
+
 .destination-text h1 {
-color: #131318;
-font-size: 2.5rem;
-font-weight: 800;
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
+
 .desitination-img-1,
 .desitination-img-2,
 .desitination-img-3,
@@ -186,6 +188,64 @@ font-weight: 800;
     display: flex;
     gap: 24px;
     justify-content: center;
+}
+
+.why-us-hero {
+    text-align: center;
+    width: 650px;
+    margin: 0px auto;
+}
+
+.why-us-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.why-us-hero p {
+    font-weight: 400;
+    color: #131318;
+}
+
+.flashcard {
+    width: 570px;
+    padding: 20px;
+}
+
+.flashcard h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.flashcard p {
+    font-weight: 400;
+    color: #5A5A5D;
+}
+
+.flashcard-1 {
+    background: #FBB5630D;
+    border: 1px solid #FBB56333;
+    border-radius: 5px;
+}
+
+.flashcard-2 {
+    background: #29CEF60D;
+    border: 1px solid #29CEF633;
+    border-radius: 5px;
+}
+
+.why-us-flashcard {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.flashcard-3 {
+    background: #E944440D;
+    border: 1px solid #E9444433;
+    border-radius: 5px;
+    margin: 12px auto;
 }
 
 /* Mobile Styles */
@@ -274,26 +334,53 @@ font-weight: 800;
         gap: 16px;
     }
 
-    
-.destinatiton-img-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-}
 
-.desitination-img-1,
-.desitination-img-2,
-.desitination-img-3,
-.desitination-img-4,
-.desitination-img-5,
-.desitination-img-6,
-.desitination-img-7, img {
-    width: 100%;
-}
+    .destinatiton-img-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
 
-.destination-text h1 {
-    font-size: 1.25rem;
+    .desitination-img-1,
+    .desitination-img-2,
+    .desitination-img-3,
+    .desitination-img-4,
+    .desitination-img-5,
+    .desitination-img-6,
+    .desitination-img-7,
+    img {
+        width: 100%;
+    }
+
+    .destination-text h1 {
+        font-size: 1.25rem;
+    }
+
+    .why-us-hero {
+        width: auto;
+        margin: 0px auto;
+    }
+
+    .why-us-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .flashcard {
+        width: auto;
+    }
+
+    .flashcard img {
+        width: auto;
+    }
+
+    .flashcard h1 {
+        font-size: 1.5rem;
+    }
+    .why-us-flashcard {
+        flex-direction: column;
     }
 
 }
+
+
