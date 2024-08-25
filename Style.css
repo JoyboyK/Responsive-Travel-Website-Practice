@@ -4,7 +4,10 @@
 
     font-family: "Mulish", sans-serif;
 }
-
+ body {
+    max-width: 1508px;
+    margin: 0px auto;
+ }
 header,
 main {
     padding-left: 135px;
@@ -247,7 +250,93 @@ li {
     border-radius: 5px;
     margin: 12px auto;
 }
+.package {
+    padding: 30px;
+    background: #FFFFFFCC;
+    border: 2px solid white;
+    max-width: 480px;
+    max-height: 300px;
+    border-radius: 16px;
+}
 
+.deals {
+    text-align: center;
+    margin-top: 100px;
+}
+.features {
+    margin-top: 50px;
+}
+.deals h2 {
+font-size: 2.5rem;
+font-weight: 800;
+}
+
+.deals p {
+    font-weight: 400;
+}
+.features:first-child img {
+    width: 100%;
+}
+.features {
+    position: relative;
+}
+.package-validity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.package h3 {
+font-size: 1.5rem;
+font-weight: 800;
+text-align: left;
+}
+
+.package p {
+    font-weight: 400;
+    text-align: left;
+    width: 450px;
+}
+.package h4 {
+font-size: 1.25rem;
+font-weight: 800;
+text-align: left;
+color: #FF5400;
+
+}
+.package {
+    position: absolute;
+bottom: 15%;
+right: 10%;
+}
+.package-2 {
+position: absolute;
+bottom: 15%;
+left: 10%;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+}
+.wide-button {
+    text-align: center;
+}
+.btn-wide {
+    width: 210px;
+    height: 52px;
+    background-color: #FF5400;
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 45px;
+}
+
+.btn-wide h2{
+    padding: 10px;
+    margin: 0px;
+font-size: 1.25rem;
+font-weight: 800;
+color: white;
+}
 /* Mobile Styles */
 
 @media only screen and (max-width:576px) {
@@ -256,7 +345,7 @@ li {
     main {
         padding: 0px;
     }
-
+    
     .desktop-menu {
         display: none;
     }
@@ -380,7 +469,46 @@ li {
     .why-us-flashcard {
         flex-direction: column;
     }
-
+.deals h2 {
+    font-size: 1.5rem;
+}
+.deals {
+    margin-top: 50px;
+}
+.package {
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+}
+.package h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+.features img {
+    height: 600px;
+    object-fit: cover;
+}
+.package-validity img {
+    height: 24px;
+    width: 24px;
+}
+.package p {
+    width: auto;
+}
+.package h4 {
+    margin: 10px;
+}
+.package {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.features {
+    margin-top: 30px;
+}
+.wide-button {
+    display: none;
+}
 }
 
 
