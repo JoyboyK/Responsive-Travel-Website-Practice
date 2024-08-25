@@ -107,7 +107,6 @@ header {
     margin: 0px auto;
 
 }
-
 .btn-1 {
     display: flex;
     align-items: center;
@@ -118,6 +117,49 @@ header {
     font-weight: 700;
 }
 
+.video-container {
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+.video-text h1 {
+font-size: 2.5rem;
+font-weight: 800;
+width: 450px;
+}
+
+.video-text p {
+    color: #5A5A5D;
+    font-weight: 400;
+    width:530px;
+}
+
+.video-text li {
+font-weight: 700;
+width: 520px;
+margin-top: 10px;
+}
+.video-text button {
+    margin-top: 40px;
+}
+.video-image {
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0) 100%);
+    position: relative;
+    border-radius: 16px;
+}
+.video-image-text {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.video-image h5 {
+font-size: 1.5rem;
+font-weight: 700;
+text-align: center;
+color: white;
+}
 /* Main */
 
 .popular-tour-container {
@@ -463,7 +505,7 @@ color: white;
         width: auto;
     }
 
-    .flashcard h1 {
+    .flashcard,.video-text h1 {
         font-size: 1.5rem;
     }
     .why-us-flashcard {
@@ -508,6 +550,17 @@ transform: translate(-50%, -50%);
 }
 .wide-button {
     display: none;
+}
+
+.video-container {
+    flex-direction: column;
+    padding-top: 20px;
+}
+.video-text p {
+    width: auto;
+}
+.video-text li {
+    width: auto;
 }
 }
 
