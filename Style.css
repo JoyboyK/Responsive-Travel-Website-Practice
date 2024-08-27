@@ -500,7 +500,7 @@ li {
 
     header,
     main {
-        padding: 0px;
+        padding: 10px 10px 20px 10px;
     }
 
     .desktop-menu {
@@ -696,7 +696,6 @@ li {
     .newsletter-input {
         width: 335px;
         height: 353px;
-        display: none;
     }
 
     .newsletter-input input {
@@ -714,5 +713,9 @@ li {
     }
     .newsletter-container {
         margin-top: 20px;
+        flex-direction: column;
+    }
+    .newsletter-image img{
+        height: 300px;
     }
 }
